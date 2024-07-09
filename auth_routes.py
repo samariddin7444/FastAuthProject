@@ -45,7 +45,7 @@ async def signup(user : SignUp):
     )
     session.add(new_user)
     session.commit()
-    user data={
+    user_data={
         'username': user.username,
         'email': user.email,
         'is_active': user.is_active,
