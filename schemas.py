@@ -21,3 +21,7 @@ class SignUp(BaseModel):
                 "is_staff": False,
             }
         }
+
+class Login(BaseModel):
+    username_or_email: str
+    password: str

@@ -1,8 +1,6 @@
 from database import Base
-from sqlalchemy import Column, Integer, String, Text, ForeignKey,Boolean,DateTime,Enum
+from sqlalchemy import Column, Integer, String, Text, ForeignKey, Boolean, DateTime, Enum
 from sqlalchemy.orm import relationship
-
-
 
 
 class User(Base):
@@ -50,8 +48,3 @@ class Review(Base):
     book_id = Column(Integer, ForeignKey('books.id'))
 
     book = relationship("Book", back_populates="reviews")
-
-
-
-
-
